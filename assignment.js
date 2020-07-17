@@ -28,25 +28,25 @@ function brickCalculator(calculation){
     const oneFeet   = 1000;
     const tenFloors    = 15;
     const twentyFloors   = 12;
-    const overTwenty   = 10;
+    const overTwentyFloor   = 10;
     if(calculation <= 10){
-        var multiply = calculation * tenFloors;
-        var result = multiply  * oneFeet;
+        var multiplyBy = calculation * tenFloors;
+        var result = multiplyBy  * oneFeet;
         return result;
     }else if(calculation <=20){
-        var subtract = calculation - 10;
-        var multiply = subtract * twentyFloors;
+        var subtractNumbers = calculation - 10;
+        var multiplyBy = subtractNumbers * twentyFloors;
         var firstTen = 10 * 15;
-        var total  = multiply + firstTen;
+        var total  = multiplyBy + firstTen;
         var result = total * oneFeet;
         return result;
     }else if(calculation > 20){
-        var subtract = calculation - 20;
-        var multiply = subtract * overTwenty;
-        var firstTen = 10*15;
-        var secondTen = 10*12;
-        var total = multiply + firstTen + secondTen;
-        var result = total  *oneFeet;
+        var subtractNumbers = calculation - 20;
+        var multiplyBy = subtractNumbers * overTwentyFloor;
+        var firstTen = 10 * 15;
+        var secondTen = 10 * 12;
+        var total = multiplyBy + firstTen + secondTen;
+        var result = total  * oneFeet;
         return result;
     }
 }
