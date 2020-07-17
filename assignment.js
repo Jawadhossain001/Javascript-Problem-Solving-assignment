@@ -24,24 +24,24 @@ function woodCalculator(chair, table, bed) {
 // <---- Function->3) Brick Calculator ---->
 
 
-function brickCalculator(calculate){
-    const oneFeet           = 1000;
+function brickCalculator(calculation){
+    const oneFeet   = 1000;
     const tenFloors    = 15;
     const twentyFloors   = 12;
-    const overTwenty        = 10;
-    if(calculate <= 10){
-        var multiply = calculate * tenFloors;
+    const overTwenty   = 10;
+    if(calculation <= 10){
+        var multiply = calculation * tenFloors;
         var result = multiply  * oneFeet;
         return result;
-    }else if(calculate <=20){
-        var subtract = calculate - 10;
+    }else if(calculation <=20){
+        var subtract = calculation - 10;
         var multiply = subtract * twentyFloors;
         var firstTen = 10 * 15;
-        var total    = multiply + firstTen;
+        var total  = multiply + firstTen;
         var result = total * oneFeet;
         return result;
-    }else if(calculate > 20){
-        var subtract = calculate - 20;
+    }else if(calculation > 20){
+        var subtract = calculation - 20;
         var multiply = subtract * overTwenty;
         var firstTen = 10*15;
         var secondTen = 10*12;
