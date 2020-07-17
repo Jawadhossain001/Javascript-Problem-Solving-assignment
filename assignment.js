@@ -30,23 +30,23 @@ function brickCalculator(calculation){
     const twentyFloors   = 12;
     const overTwentyFloor   = 10;
     if(calculation <= 10){
-        var multiplyBy = calculation * tenFloors;
-        var result = multiplyBy  * oneFeet;
+        let multiplyBy = calculation * tenFloors;
+        let result = multiplyBy  * oneFeet;
         return result;
     }else if(calculation <=20){
-        var subtractNumbers = calculation - 10;
-        var multiplyBy = subtractNumbers * twentyFloors;
-        var firstTen = 10 * 15;
-        var total  = multiplyBy + firstTen;
-        var result = total * oneFeet;
+        let subtractNumbers = calculation - 10;
+        let multiplyBy = subtractNumbers * twentyFloors;
+        let firstTen = 10 * 15;
+        let total  = multiplyBy + firstTen;
+        let result = total * oneFeet;
         return result;
     }else if(calculation > 20){
-        var subtractNumbers = calculation - 20;
-        var multiplyBy = subtractNumbers * overTwentyFloor;
-        var firstTen = 10 * 15;
-        var secondTen = 10 * 12;
-        var total = multiplyBy + firstTen + secondTen;
-        var result = total  * oneFeet;
+        let subtractNumbers = calculation - 20;
+        let multiplyBy = subtractNumbers * overTwentyFloor;
+        let firstTen = 10 * 15;
+        let secondTen = 10 * 12;
+        let total = multiplyBy + firstTen + secondTen;
+        let result = total  * oneFeet;
         return result;
     }
 }
@@ -57,9 +57,9 @@ function brickCalculator(calculation){
 
 
 function tinyFriend(name){
-    var smallest = name[0];
-    for(var i = 0; i < name.length; i++){
-        var currentNames = name[i];
+    let smallest = name[0];
+    for(let i = 0; i < name.length; i++){
+        let currentNames = name[i];
         if(currentNames.length < smallest.length){
             smallest = currentNames;
         }
